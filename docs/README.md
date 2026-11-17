@@ -5,4 +5,3 @@
 - [Arquitectura](arquitectura.md): cómo se arma el tap y por qué.
 - [Versionado](versionado.md): cómo se numeran y publican las releases.
 - [Troubleshooting](troubleshooting.md): errores frecuentes y qué hacer.
-- [Guía de estilo](guia-de-estilo.md): cómo se escribe la documentación.

@@ -52,7 +52,6 @@ Los IDs no se inventan. Si una serie no existe, no entra.
 - README, docs y mensajes de usuario en español.
 - Docstrings cortos, en español, sin repetir el nombre de la función.
 - Nada de comentarios que expliquen lo obvio.
-- Antes de escribir documentación, leé `docs/guia-de-estilo.md`.
 
 ## Commits
 

@@ -187,10 +187,9 @@ make test-integration  # pega contra la API real
 Los tests unitarios no usan red. Los de integración verifican que cada ID del
 catálogo exista y devuelva datos.
 
-Para agregar una serie, seguí [`CONTRIBUTING.md`](CONTRIBUTING.md). La guía de
-estilo de la documentación está en [`docs/guia-de-estilo.md`](docs/guia-de-estilo.md).
-Los cambios por versión están en [`CHANGELOG.md`](CHANGELOG.md) y el criterio de
-versionado en [`docs/versionado.md`](docs/versionado.md).
+Para agregar una serie, seguí [`CONTRIBUTING.md`](CONTRIBUTING.md). Los cambios
+por versión están en [`CHANGELOG.md`](CHANGELOG.md) y el criterio de versionado
+en [`docs/versionado.md`](docs/versionado.md).
 
 ## Licencia
 

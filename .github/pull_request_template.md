@@ -13,4 +13,4 @@
 
 - [ ] Actualicé `CHANGELOG.md` si cambia el comportamiento o el esquema.
 - [ ] Si agregué una serie, verifiqué el ID contra la API.
-- [ ] La documentación usa el estilo de `docs/guia-de-estilo.md`.
+- [ ] La documentación está en español y sigue el estilo del README.
