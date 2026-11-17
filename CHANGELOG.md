@@ -20,4 +20,4 @@ Todos los cambios relevantes se documentan acá. El formato sigue
 - CI en Python 3.10 a 3.13, workflow de release y documentación en español.
 
 [Sin publicar]: https://github.com/akalautaro/tap-indec/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/akalautaro/tap-indec/compare/v0.0.0...v0.1.0
+[0.1.0]: https://github.com/akalautaro/tap-indec/releases/tag/v0.1.0
