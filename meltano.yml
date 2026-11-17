@@ -1,0 +1,40 @@
+version: 1
+default_environment: dev
+project_id: 5f1c2f7e-2c1b-4b8e-9a3e-1d2c3b4a5e6f
+
+environments:
+  - name: dev
+
+plugins:
+  extractors:
+    - name: tap-indec
+      namespace: tap_indec
+      pip_url: -e .
+      capabilities:
+        - state
+        - catalog
+        - discover
+      settings:
+        - name: start_date
+          kind: date_iso8601
+        - name: end_date
+          kind: date_iso8601
+        - name: api_url
+        - name: timeout
+          kind: integer
+        - name: max_retries
+          kind: integer
+        - name: page_size
+          kind: integer
+        - name: user_agent
+        - name: include_discontinued
+          kind: boolean
+        - name: fail_on_series_error
+          kind: boolean
+        - name: series
+          kind: object
+
+  loaders:
+    - name: target-jsonl
+      variant: meltanolabs
+      pip_url: target-jsonl
