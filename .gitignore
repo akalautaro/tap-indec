@@ -27,6 +27,9 @@ secrets/
 meltano.log
 output/
 
+# Material de investigación local
+/research/
+
 # macOS / editores
 .DS_Store
 .idea/
