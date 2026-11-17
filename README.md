@@ -1,5 +1,8 @@
 # tap-indec
 
+[![CI](https://github.com/akalautaro/tap-indec/actions/workflows/ci.yml/badge.svg)](https://github.com/akalautaro/tap-indec/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/akalautaro/tap-indec)](https://github.com/akalautaro/tap-indec/releases)
+
 tap-indec extrae series estadísticas del INDEC desde la API de series de
 datos.gob.ar y las emite como mensajes de [Singer](https://www.singer.io/).
 Funciona como extractor de [Meltano](https://meltano.com/) y también se puede
@@ -45,6 +48,12 @@ Sin Meltano, con [uv](https://docs.astral.sh/uv/):
 
 ```bash
 uvx --from git+https://github.com/akalautaro/tap-indec.git@v0.1.0 tap-indec --help
+```
+
+O con pip:
+
+```bash
+pip install git+https://github.com/akalautaro/tap-indec.git@v0.1.0
 ```
 
 ## Configuración
@@ -180,7 +189,8 @@ catálogo exista y devuelva datos.
 
 Para agregar una serie, seguí [`CONTRIBUTING.md`](CONTRIBUTING.md). La guía de
 estilo de la documentación está en [`docs/guia-de-estilo.md`](docs/guia-de-estilo.md).
-Los cambios por versión están en [`CHANGELOG.md`](CHANGELOG.md).
+Los cambios por versión están en [`CHANGELOG.md`](CHANGELOG.md) y el criterio de
+versionado en [`docs/versionado.md`](docs/versionado.md).
 
 ## Licencia
 
