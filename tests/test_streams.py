@@ -83,6 +83,39 @@ def test_start_date_is_used_without_state(config: dict[str, Any], fake_client: A
     assert fake_client.calls[0][1] == "2026-01-01"
 
 
+def test_full_refresh_ignores_state(config: dict[str, Any], fake_client: Any) -> None:
+    tap = TapIndec(
+        config={**config, "full_refresh": True},
+        state={
+            "bookmarks": {"ipc": {"series_last_dates": {"145.3_INGNACNAL_DICI_M_15": "2026-09-01"}}}
+        },
+        parse_env_config=False,
+    )
+    stream = _bind(tap.streams["ipc"], fake_client)
+
+    list(stream.get_records({}))
+
+    assert fake_client.calls[0] == ("145.3_INGNACNAL_DICI_M_15", "2026-01-01", None)
+
+
+def test_full_refresh_without_start_date_uses_series_start(
+    config: dict[str, Any], fake_client: Any
+) -> None:
+    config = {key: value for key, value in config.items() if key != "start_date"}
+    tap = TapIndec(
+        config={**config, "full_refresh": True},
+        state={
+            "bookmarks": {"ipc": {"series_last_dates": {"145.3_INGNACNAL_DICI_M_15": "2026-09-01"}}}
+        },
+        parse_env_config=False,
+    )
+    stream = _bind(tap.streams["ipc"], fake_client)
+
+    list(stream.get_records({}))
+
+    assert fake_client.calls[0] == ("145.3_INGNACNAL_DICI_M_15", "2016-12-01", None)
+
+
 def test_empty_range_emits_nothing_and_keeps_state(
     config: dict[str, Any],
 ) -> None:
@@ -224,7 +257,14 @@ def test_client_uses_configured_user_agent(config: dict[str, Any], requests_mock
         "https://api.test/series/api/series/",
         json={"data": [["2026-01-01", 1.0]], "count": 1},
     )
-    tap = TapIndec(config={**config, "user_agent": "tap-indec-test/9"}, parse_env_config=False)
+    tap = TapIndec(
+        config={
+            **config,
+            "user_agent": "tap-indec-test/9",
+            "series": {"ipc": ["145.3_INGNACNAL_DICI_M_15"]},
+        },
+        parse_env_config=False,
+    )
     stream = tap.streams["ipc"]
     stream._client = IndecClient(api_url=config["api_url"], user_agent=tap.config["user_agent"])
 

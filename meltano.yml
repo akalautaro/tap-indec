@@ -27,6 +27,8 @@ plugins:
         - name: page_size
           kind: integer
         - name: user_agent
+        - name: full_refresh
+          kind: boolean
         - name: include_discontinued
           kind: boolean
         - name: fail_on_series_error

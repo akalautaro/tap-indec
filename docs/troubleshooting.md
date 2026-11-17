@@ -60,6 +60,13 @@ Si la fecha es la misma que la última corrida, la API no publicó un período
 nuevo. Si la fecha es vieja y hay datos nuevos, revisá que el target esté
 procesando los mensajes y que `start_date` no esté filtrando de más.
 
+## Quiero recargar la historia
+
+Poné `full_refresh: true` en la configuración. El tap ignora el estado y pide
+cada serie desde `start_date` o desde su primera fecha disponible. Al terminar,
+el estado queda con la última fecha de esta corrida. Después podés volver a
+`false` para seguir incremental.
+
 ## Cambió el esquema después de actualizar el tap
 
 Volvé a correr el discovery y actualizá el catálogo del target:

@@ -113,7 +113,10 @@ CSV: usa la API para poder filtrar por fecha.
 - El máximo de puntos por página que usa el tap es 1000.
 - Los valores se copian sin transformar. Las tasas de la EPH y las variaciones
   llegan como fracciones entre 0 y 1.
-- Las revisiones de períodos viejos no se detectan. El tap vuelve a pedir el
-  último punto de cada serie.
+- Las revisiones de períodos viejos no se detectan en una corrida incremental.
+  El tap vuelve a pedir el último punto de cada serie. Con `full_refresh: true`
+  recarga desde `start_date` o desde la primera fecha disponible.
+- Algunas series de la EPH están registradas y responden `available=true`, pero
+  `/series/` devuelve cero filas. El catálogo excluye esas combinaciones.
 - Si una serie se discontinúa, la API puede seguir devolviendo historia. El
   catálogo la marca con `active: false` y el tap la omite por defecto.

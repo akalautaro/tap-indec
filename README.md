@@ -8,7 +8,7 @@ datos.gob.ar y las emite como mensajes de [Singer](https://www.singer.io/).
 Funciona como extractor de [Meltano](https://meltano.com/) y también se puede
 correr suelto.
 
-Emite tres streams con 76 series: `ipc`, `emae` y `mercado_trabajo`. La
+Emite tres streams con 243 series: `ipc`, `emae` y `mercado_trabajo`. La
 replicación es incremental y el estado se guarda por serie.
 
 ## Requisitos
@@ -30,7 +30,7 @@ Los valores del alta son:
 |---|---|
 | name | `tap-indec` |
 | namespace | `tap_indec` |
-| pip_url | `git+https://github.com/akalautaro/tap-indec.git@v0.1.0` |
+| pip_url | `git+https://github.com/akalautaro/tap-indec.git@v0.2.0` |
 | capabilities | `state`, `catalog`, `discover` |
 
 También podés declararlo en `meltano.yml`:
@@ -40,20 +40,20 @@ plugins:
   extractors:
     - name: tap-indec
       namespace: tap_indec
-      pip_url: git+https://github.com/akalautaro/tap-indec.git@v0.1.0
+      pip_url: git+https://github.com/akalautaro/tap-indec.git@v0.2.0
       capabilities: [state, catalog, discover]
 ```
 
 Sin Meltano, con [uv](https://docs.astral.sh/uv/):
 
 ```bash
-uvx --from git+https://github.com/akalautaro/tap-indec.git@v0.1.0 tap-indec --help
+uvx --from git+https://github.com/akalautaro/tap-indec.git@v0.2.0 tap-indec --help
 ```
 
 O con pip:
 
 ```bash
-pip install git+https://github.com/akalautaro/tap-indec.git@v0.1.0
+pip install git+https://github.com/akalautaro/tap-indec.git@v0.2.0
 ```
 
 ## Configuración
@@ -66,7 +66,8 @@ pip install git+https://github.com/akalautaro/tap-indec.git@v0.1.0
 | `timeout` | entero | `30` | no |
 | `max_retries` | entero | `5` | no |
 | `page_size` | entero | `1000` | no |
-| `user_agent` | string | `tap-indec/0.1.0 ...` | no |
+| `user_agent` | string | `tap-indec/0.2.0 ...` | no |
+| `full_refresh` | booleano | `false` | no |
 | `include_discontinued` | booleano | `false` | no |
 | `fail_on_series_error` | booleano | `true` | no |
 | `series` | objeto | todas las series | no |
@@ -89,6 +90,11 @@ valores, listas de IDs:
 
 `fail_on_series_error` en `false` registra el error de una serie y sigue con la
 próxima. El default corta el sync para no dejar huecos silenciosos.
+
+`full_refresh` en `true` ignora el estado y recarga cada serie desde
+`start_date` o desde su primera fecha disponible. Sirve para reconstruir la
+historia después de una revisión de la fuente o para cargar en un destino nuevo.
+El estado se vuelve a escribir con la última fecha de esta corrida.
 
 ## Uso
 
@@ -119,9 +125,9 @@ meltano run tap-indec:ipc target-jsonl
 
 | Stream | Series | Qué mide | Frecuencia | Clave primaria |
 |---|---:|---|---|---|
-| `ipc` | 26 | Índice de Precios al Consumidor, nivel general y aperturas | mensual | `series_id`, `date` |
+| `ipc` | 98 | Índice de Precios al Consumidor, nivel general y divisiones por región | mensual | `series_id`, `date` |
 | `emae` | 22 | Estimador Mensual de Actividad Económica, nivel general y sectores | mensual | `series_id`, `date` |
-| `mercado_trabajo` | 28 | Tasas de actividad, empleo, desempleo y subocupación de la EPH | trimestral | `series_id`, `date` |
+| `mercado_trabajo` | 123 | Tasas de actividad, empleo, desempleo y subocupación de la EPH | trimestral | `series_id`, `date` |
 
 Cada fila es un punto de una serie. `date` es el inicio del período, no la fecha
 de publicación. `series_id` es el ID de la API y `series_name` el nombre legible.
@@ -154,7 +160,7 @@ Si agregás una serie al catálogo, arranca desde su primera fecha o desde
 ## Limitaciones
 
 - El tap pide de a 1000 puntos por serie y pagina si la serie es más larga.
-- La primera carga hace un request por serie. En la 0.1.0 son 76 requests.
+- La primera carga hace un request por serie. En la 0.2.0 son 243 requests.
 - Los valores se copian tal como los publica la fuente. El tap no calcula
   variaciones, no desestacionaliza y no convierte unidades.
 - Las series de variación del IPC y del EMAE se emiten como fracciones 0-1.
@@ -163,11 +169,12 @@ Si agregás una serie al catálogo, arranca desde su primera fecha o desde
   rotule como porcentaje. El campo `unit` lo aclara.
 - El total de `mercado_trabajo` es el total de 31 aglomerados urbanos, no el
   total nacional.
-- La 0.1.0 incluye el total y seis aglomerados de la EPH. Las otras geografías
-  de la API no están en el catálogo.
+- La EPH tiene 39 geografías. La API devuelve datos para 123 de las 156
+  combinaciones de geografía y tasa; el catálogo incluye solo esas 123. Las 33
+  combinaciones restantes están registradas pero devuelven cero filas.
 - Las revisiones de INDEC sobre períodos viejos no se detectan si quedan fuera
-  del último punto. Para recargar historia, borrá el estado o mové `start_date`
-  hacia atrás.
+  del último punto. Con `full_refresh: true` se recarga la historia desde
+  `start_date` o desde la primera fecha de cada serie.
 - No ingiere microdatos de la EPH ni archivos Excel del sitio de INDEC.
 - Si una serie del catálogo deja de existir, el sync falla. Con
   `fail_on_series_error: false` se saltea y sigue.

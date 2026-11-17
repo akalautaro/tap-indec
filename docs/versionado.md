@@ -59,5 +59,6 @@ en `CHANGELOG.md` y en las release notes.
 
 ## PyPI
 
-La 0.1.0 se publica como GitHub Release. La publicación en PyPI queda para
-cuando el proyecto tenga una versión estable y un nombre disponible.
+Las releases 0.1.0 y 0.2.0 se publican como GitHub Release. La publicación en
+PyPI queda para cuando el proyecto tenga una versión estable y un nombre
+disponible.

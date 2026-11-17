@@ -2,9 +2,9 @@
 
 | Stream | Frecuencia | Series | Qué emite |
 |---|---|---:|---|
-| [`ipc`](ipc.md) | mensual | 26 | Índice de Precios al Consumidor |
+| [`ipc`](ipc.md) | mensual | 98 | Índice de Precios al Consumidor |
 | [`emae`](emae.md) | mensual | 22 | Estimador Mensual de Actividad Económica |
-| [`mercado_trabajo`](mercado_trabajo.md) | trimestral | 28 | Tasas de la Encuesta Permanente de Hogares |
+| [`mercado_trabajo`](mercado_trabajo.md) | trimestral | 123 | Tasas de la Encuesta Permanente de Hogares |
 
 Los tres comparten la clave primaria `series_id` + `date`. La diferencia está
 en las columnas de apertura:

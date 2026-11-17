@@ -10,7 +10,7 @@ tap_indec/
 ├── tap.py          # configuración y descubrimiento
 ├── streams.py      # streams, esquema y estado incremental
 ├── client.py       # HTTP, paginación y errores
-└── catalog.json    # 76 series con metadatos y dimensiones
+└── catalog.json    # 243 series con metadatos y dimensiones
 ```
 
 ## Flujo
@@ -33,14 +33,14 @@ tap_indec/
 
 `ipc`, `emae` y `mercado_trabajo` agrupan series de la misma frecuencia. Las
 aperturas (región, categoría, sector, aglomerado, medida) son columnas. Si cada
-serie fuera un stream, el catálogo tendría 76 streams y el usuario tendría que
+serie fuera un stream, el catálogo tendría 243 streams y el usuario tendría que
 elegir uno por uno.
 
 ### Una serie por request
 
 La API acepta hasta 40 IDs por request, pero si uno no existe responde 400 y no
 devuelve nada. Pedir de a una serie acota el error y permite guardar estado por
-serie. El costo es una llamada por serie: 76 en la primera carga.
+serie. El costo es una llamada por serie: 243 en la primera carga.
 
 ### Estado por serie
 
@@ -62,6 +62,13 @@ de cada serie:
 Así una serie que se publica más tarde no arrastra a las demás ni se saltea
 períodos. El tap pide desde la última fecha inclusive, para volver a leer el
 último punto y corregir revisiones.
+
+### Recarga completa
+
+`full_refresh: true` ignora el estado y arranca cada serie en `start_date` o en
+su primera fecha disponible. No borra el estado antes de empezar: lo reescribe
+a medida que emite. Sirve para reconstruir un destino o para recargar la
+historia cuando la fuente revisa datos viejos.
 
 ### Catálogo empaquetado
 
@@ -91,6 +98,6 @@ emite la fila y no interpola. El estado se queda en la última fecha con valor.
 
 - Microdatos de la EPH.
 - Archivos Excel del sitio de INDEC.
-- Aperturas por división y región del IPC (84 series adicionales).
-- Las 39 geografías de la EPH: la 0.1.0 incluye siete.
+- Series de incidencia y precios de productos individuales del IPC.
+- Las 33 combinaciones de geografía y tasa de la EPH que la API devuelve vacías.
 - Empalmes de series con cambios de base o metodología.

@@ -54,6 +54,7 @@ def test_config_schema_has_expected_properties(tap: TapIndec) -> None:
         "max_retries",
         "page_size",
         "user_agent",
+        "full_refresh",
         "include_discontinued",
         "fail_on_series_error",
         "series",
@@ -92,6 +93,55 @@ def test_catalog_ids_are_unique() -> None:
     ids = [series["id"] for stream in catalog["streams"].values() for series in stream["series"]]
 
     assert len(ids) == len(set(ids))
+
+
+def test_catalog_coverage() -> None:
+    catalog = load_catalog()
+
+    assert len(catalog["streams"]["ipc"]["series"]) == 98
+    assert len(catalog["streams"]["emae"]["series"]) == 22
+    assert len(catalog["streams"]["mercado_trabajo"]["series"]) == 123
+
+
+def test_ipc_covers_every_division_and_region() -> None:
+    catalog = load_catalog()
+    divisions = {
+        "Alimentos y bebidas no alcohólicas",
+        "Bebidas alcohólicas y tabaco",
+        "Prendas de vestir y calzado",
+        "Vivienda, agua, electricidad, gas y otros combustibles",
+        "Equipamiento y mantenimiento del hogar",
+        "Salud",
+        "Transporte",
+        "Comunicaciones",
+        "Recreación y cultura",
+        "Educación",
+        "Restaurantes y hoteles",
+        "Bienes y servicios varios",
+    }
+    series = catalog["streams"]["ipc"]["series"]
+    combinations = {
+        (item["dimensions"]["category"], item["dimensions"]["region"])
+        for item in series
+        if item["dimensions"].get("category") in divisions
+    }
+
+    categories = {category for category, _ in combinations}
+    regions = {region for _, region in combinations}
+    assert categories == divisions
+    assert len(regions) == 7
+    assert len(combinations) == 84
+
+
+def test_mercado_trabajo_covers_all_available_geographies() -> None:
+    catalog = load_catalog()
+    series = catalog["streams"]["mercado_trabajo"]["series"]
+
+    aglomerados = {item["dimensions"]["aglomerado"] for item in series}
+    measures = {item["dimensions"]["measure"] for item in series}
+    assert len(aglomerados) == 39
+    assert measures == {"Actividad", "Empleo", "Desempleo", "Subocupación"}
+    assert len(series) == 123
 
 
 def test_schema_contains_dimension_columns(tap: TapIndec) -> None:

@@ -150,9 +150,11 @@ class IndecSeriesStream(Stream):
         state = self.stream_state.setdefault("series_last_dates", {})
         start_override = self.config.get("start_date")
         end_date = self.config.get("end_date")
+        full_refresh = bool(self.config.get("full_refresh", False))
 
         for spec in self.series:
-            start_date = state.get(spec.id) or start_override or spec.start_date or None
+            start_date = None if full_refresh else state.get(spec.id)
+            start_date = start_date or start_override or spec.start_date or None
             try:
                 result = self.client.fetch_series(spec.id, start_date=start_date, end_date=end_date)
             except IndecAPIError as exc:

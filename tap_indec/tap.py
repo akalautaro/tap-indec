@@ -66,6 +66,16 @@ class TapIndec(Tap):
             description="Header User-Agent enviado a la API.",
         ),
         th.Property(
+            "full_refresh",
+            th.BooleanType,
+            default=False,
+            description=(
+                "Si es true, ignora el estado incremental y recarga cada serie "
+                "desde start_date o desde su primera fecha disponible. El estado "
+                "se vuelve a escribir al terminar."
+            ),
+        ),
+        th.Property(
             "include_discontinued",
             th.BooleanType,
             default=False,
