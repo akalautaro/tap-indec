@@ -1,7 +1,7 @@
 # Fixtures
 
-Respuestas reales de la API de series de datos.gob.ar, recortadas al rango que
-necesitan los tests. Se usan para que los tests unitarios no dependan de la red.
+Respuestas reales de la API de series de datos.gob.ar. Se usan para que los
+tests unitarios no dependan de la red.
 
 | Archivo | Serie | Fecha de captura |
 |---|---|---|
