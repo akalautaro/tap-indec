@@ -1,0 +1,46 @@
+name: Bug
+description: Algo no funciona como dice la documentación
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Antes de abrir el issue, revisá `docs/troubleshooting.md`.
+  - type: input
+    id: version
+    attributes:
+      label: Versión del tap
+      description: Salida de `tap-indec --version`
+      placeholder: tap-indec v0.1.0, Meltano SDK v0.54.9
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Comando y configuración
+      description: Sin secretos. Incluí el stream y las settings relevantes.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Qué esperabas
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Qué pasó
+      description: Pegá el error completo y las últimas líneas de log.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Cómo reproducirlo
+      description: Pasos mínimos. Si podés, un ID de serie y una fecha.
+    validations:
+      required: false
