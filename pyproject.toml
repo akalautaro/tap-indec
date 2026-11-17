@@ -8,13 +8,13 @@ dynamic = ["version"]
 description = "Tap de Meltano para ingerir series estadísticas del INDEC (Argentina)"
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "Apache-2.0" }
+license = "Apache-2.0"
+license-files = ["LICENSE"]
 authors = [{ name = "Lautaro Celli", email = "cellilautaro@gmail.com" }]
 keywords = ["meltano", "singer", "indec", "argentina", "etl", "datos-abiertos"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: Apache Software License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",

@@ -51,6 +51,23 @@ jobs:
       - name: Tests
         run: uv run pytest --cov=tap_indec --cov-report=term-missing --cov-fail-under=85
 
+  packaging:
+    name: Paquete
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: astral-sh/setup-uv@v7
+        with:
+          python-version: "3.12"
+          enable-cache: true
+
+      - name: Construir sdist y wheel
+        run: uv build
+
+      - name: Validar metadatos para PyPI
+        run: uvx twine check dist/*
+
   integration:
     name: Catálogo contra la API real
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'

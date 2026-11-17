@@ -1,6 +1,7 @@
 # tap-indec
 
 [![CI](https://github.com/akalautaro/tap-indec/actions/workflows/ci.yml/badge.svg)](https://github.com/akalautaro/tap-indec/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/tap-indec)](https://pypi.org/project/tap-indec/)
 [![Release](https://img.shields.io/github/v/release/akalautaro/tap-indec)](https://github.com/akalautaro/tap-indec/releases)
 
 tap-indec extrae series estadísticas del INDEC desde la API de series de
@@ -18,7 +19,19 @@ replicación es incremental y el estado se guarda por serie.
 
 ## Instalación
 
-Con Meltano:
+Con pip:
+
+```bash
+pip install tap-indec
+```
+
+Con [uv](https://docs.astral.sh/uv/):
+
+```bash
+uvx --from tap-indec tap-indec --help
+```
+
+Con Meltano, mientras el tap no esté listado en el Hub:
 
 ```bash
 meltano add --custom extractor tap-indec
@@ -30,7 +43,7 @@ Los valores del alta son:
 |---|---|
 | name | `tap-indec` |
 | namespace | `tap_indec` |
-| pip_url | `git+https://github.com/akalautaro/tap-indec.git@v0.2.0` |
+| pip_url | `tap-indec` |
 | capabilities | `state`, `catalog`, `discover` |
 
 También podés declararlo en `meltano.yml`:
@@ -40,21 +53,12 @@ plugins:
   extractors:
     - name: tap-indec
       namespace: tap_indec
-      pip_url: git+https://github.com/akalautaro/tap-indec.git@v0.2.0
+      pip_url: tap-indec
       capabilities: [state, catalog, discover]
 ```
 
-Sin Meltano, con [uv](https://docs.astral.sh/uv/):
-
-```bash
-uvx --from git+https://github.com/akalautaro/tap-indec.git@v0.2.0 tap-indec --help
-```
-
-O con pip:
-
-```bash
-pip install git+https://github.com/akalautaro/tap-indec.git@v0.2.0
-```
+Si querés seguir un tag del repositorio en lugar de PyPI, usá
+`pip_url: git+https://github.com/akalautaro/tap-indec.git@v0.2.0`.
 
 ## Configuración
 

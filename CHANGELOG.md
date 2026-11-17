@@ -17,12 +17,17 @@ Todos los cambios relevantes se documentan acá. El formato sigue
 - Setting `full_refresh` para ignorar el estado y recargar cada serie desde
   `start_date` o desde su primera fecha disponible.
 - Tests de cobertura del catálogo y del modo `full_refresh`.
+- Publicación en PyPI con Trusted Publishing. `pip install tap-indec` deja de
+  depender del tag de Git.
+- Metadatos del paquete con PEP 639: licencia como expresión SPDX y `LICENSE`
+  incluido en el wheel.
 
 ### Cambiado
 
 - La documentación de streams refleja las nuevas series y la cobertura real de
   la EPH.
 - El catálogo empaquetado pasa de 76 a 243 series.
+- La instalación documentada usa PyPI. El tag de Git queda como alternativa.
 
 ## [0.1.0] - 2026-11-17
 
