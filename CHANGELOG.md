@@ -6,6 +6,8 @@ Todos los cambios relevantes se documentan acá. El formato sigue
 
 ## [Sin publicar]
 
+## [0.1.0] - 2026-11-17
+
 ### Agregado
 
 - Primer release del tap con 76 series en los streams `ipc`, `emae` y
@@ -17,4 +19,5 @@ Todos los cambios relevantes se documentan acá. El formato sigue
 - Documentación de streams, fuente, troubleshooting y guía de estilo.
 - CI en Python 3.10 a 3.13, workflow de release y documentación en español.
 
-[Sin publicar]: https://github.com/akalautaro/tap-indec/compare/v0.0.0...HEAD
+[Sin publicar]: https://github.com/akalautaro/tap-indec/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/akalautaro/tap-indec/compare/v0.0.0...v0.1.0
