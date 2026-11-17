@@ -1,0 +1,1332 @@
+{
+  "streams": {
+    "ipc": {
+      "description": "Índice de Precios al Consumidor Nacional (IPC), base diciembre 2016. Nivel general nacional y por región, aperturas por capítulos (12 divisiones), bienes/servicios y categorías (núcleo, regulados, estacionales). Frecuencia mensual. Fuente: INDEC / SSPM.",
+      "series": [
+        {
+          "id": "145.3_INGNACNAL_DICI_M_15",
+          "name": "IPC Nivel General Nacional",
+          "description": "IPC. Nivel General Nacional. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.3/download/indice-precios-al-consumidor-nivel-general-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Nacional",
+            "category": "Nivel general",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        },
+        {
+          "id": "145.3_INGNACUAL_DICI_M_38",
+          "name": "IPC Nivel General Nacional - variación mensual",
+          "description": "IPC. Tasa de variación mensual. Nivel General. Nacional. Base dic 2016.",
+          "frequency": "monthly",
+          "units": "Variación intermensual (0-1)",
+          "start_date": "2017-01-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.3/download/indice-precios-al-consumidor-nivel-general-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Nacional",
+            "category": "Nivel general",
+            "measure": "Variación mensual"
+          },
+          "active": true
+        },
+        {
+          "id": "145.3_INGNACIOR_DICI_M_57",
+          "name": "IPC Nivel General Nacional - variación acumulada anual",
+          "description": "IPC. Tasa de variación acumulada desde diciembre del año anterior. Nivel General. Nacional. Base dic 2016. Mensual acumulados.",
+          "frequency": "monthly",
+          "units": "Variación acumulada anual (0-1)",
+          "start_date": "2017-01-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.3/download/indice-precios-al-consumidor-nivel-general-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Nacional",
+            "category": "Nivel general",
+            "measure": "Variación acumulada anual"
+          },
+          "active": true
+        },
+        {
+          "id": "145.3_INGGBAGBA_DICI_M_10",
+          "name": "IPC Nivel General GBA",
+          "description": "IPC. Nivel General Gran Buenos Aires. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.3/download/indice-precios-al-consumidor-nivel-general-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "GBA",
+            "category": "Nivel general",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        },
+        {
+          "id": "145.3_INGPAMANA_DICI_M_15",
+          "name": "IPC Nivel General Región Pampeana",
+          "description": "IPC. Nivel General Región Pampeana. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.3/download/indice-precios-al-consumidor-nivel-general-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Región Pampeana",
+            "category": "Nivel general",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        },
+        {
+          "id": "145.3_INGNEANEA_DICI_M_10",
+          "name": "IPC Nivel General Región Noreste",
+          "description": "IPC. Nivel General Región Noreste. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.3/download/indice-precios-al-consumidor-nivel-general-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Región Noreste",
+            "category": "Nivel general",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        },
+        {
+          "id": "145.3_INGNOANOA_DICI_M_10",
+          "name": "IPC Nivel General Región Noroeste",
+          "description": "IPC. Nivel General región Noroeste. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.3/download/indice-precios-al-consumidor-nivel-general-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Región Noroeste",
+            "category": "Nivel general",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        },
+        {
+          "id": "145.3_INGCUYUYO_DICI_M_11",
+          "name": "IPC Nivel General Región Cuyo",
+          "description": "IPC. Nivel General Cuyo. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.3/download/indice-precios-al-consumidor-nivel-general-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Región Cuyo",
+            "category": "Nivel general",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        },
+        {
+          "id": "145.3_INGPATNIA_DICI_M_16",
+          "name": "IPC Nivel General Región Patagonia",
+          "description": "IPC. Nivel General Región Patagónica. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.3/download/indice-precios-al-consumidor-nivel-general-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Región Patagonia",
+            "category": "Nivel general",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        },
+        {
+          "id": "146.3_IALIMENNAL_DICI_M_45",
+          "name": "IPC Alimentos y bebidas no alcohólicas - Nacional",
+          "description": "IPC. Alimentos y bebidas no alcohólicas. Nacional. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.5/download/indice-precios-al-consumidor-apertura-por-capitulos-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Nacional",
+            "category": "Alimentos y bebidas no alcohólicas",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        },
+        {
+          "id": "146.3_IBEBIDANAL_DICI_M_39",
+          "name": "IPC Bebidas alcohólicas y tabaco - Nacional",
+          "description": "IPC. Bebidas alcohólicas y tabaco. Nacional. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.5/download/indice-precios-al-consumidor-apertura-por-capitulos-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Nacional",
+            "category": "Bebidas alcohólicas y tabaco",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        },
+        {
+          "id": "146.3_IPRENDANAL_DICI_M_35",
+          "name": "IPC Prendas de vestir y calzado - Nacional",
+          "description": "IPC. Prendas de vestir y calzado. Nacional. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.5/download/indice-precios-al-consumidor-apertura-por-capitulos-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Nacional",
+            "category": "Prendas de vestir y calzado",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        },
+        {
+          "id": "146.3_IVIVIENNAL_DICI_M_52",
+          "name": "IPC Vivienda, agua, electricidad, gas y otros combustibles - Nacional",
+          "description": "IPC. Vivienda, agua, electricidad, y otros combustibles. Nacional. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.5/download/indice-precios-al-consumidor-apertura-por-capitulos-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Nacional",
+            "category": "Vivienda, agua, electricidad, gas y otros combustibles",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        },
+        {
+          "id": "146.3_IEQUIPANAL_DICI_M_46",
+          "name": "IPC Equipamiento y mantenimiento del hogar - Nacional",
+          "description": "IPC. Equipamiento y mantenimiento del hogar. Nacional. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.5/download/indice-precios-al-consumidor-apertura-por-capitulos-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Nacional",
+            "category": "Equipamiento y mantenimiento del hogar",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        },
+        {
+          "id": "146.3_ISALUDNAL_DICI_M_18",
+          "name": "IPC Salud - Nacional",
+          "description": "IPC. Salud. Nacional. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.5/download/indice-precios-al-consumidor-apertura-por-capitulos-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Nacional",
+            "category": "Salud",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        },
+        {
+          "id": "146.3_ITRANSPNAL_DICI_M_23",
+          "name": "IPC Transporte - Nacional",
+          "description": "IPC. Transporte. Nacional. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.5/download/indice-precios-al-consumidor-apertura-por-capitulos-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Nacional",
+            "category": "Transporte",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        },
+        {
+          "id": "146.3_ICOMUNINAL_DICI_M_27",
+          "name": "IPC Comunicaciones - Nacional",
+          "description": "IPC. Comunicaciones. Nacional. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.5/download/indice-precios-al-consumidor-apertura-por-capitulos-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Nacional",
+            "category": "Comunicaciones",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        },
+        {
+          "id": "146.3_IRECREANAL_DICI_M_31",
+          "name": "IPC Recreación y cultura - Nacional",
+          "description": "IPC. Recreación y cultura. Nacional. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.5/download/indice-precios-al-consumidor-apertura-por-capitulos-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Nacional",
+            "category": "Recreación y cultura",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        },
+        {
+          "id": "146.3_IEDUCACNAL_DICI_M_22",
+          "name": "IPC Educación - Nacional",
+          "description": "IPC. Educación. Nacional. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.5/download/indice-precios-al-consumidor-apertura-por-capitulos-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Nacional",
+            "category": "Educación",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        },
+        {
+          "id": "146.3_IRESTAUNAL_DICI_M_33",
+          "name": "IPC Restaurantes y hoteles - Nacional",
+          "description": "IPC. Hoteles y restaurantes. Nacional. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.5/download/indice-precios-al-consumidor-apertura-por-capitulos-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Nacional",
+            "category": "Restaurantes y hoteles",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        },
+        {
+          "id": "146.3_IBIENESNAL_DICI_M_36",
+          "name": "IPC Bienes y servicios varios - Nacional",
+          "description": "IPC. Bienes y servicios varios. Nacional. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.5/download/indice-precios-al-consumidor-apertura-por-capitulos-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Nacional",
+            "category": "Bienes y servicios varios",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        },
+        {
+          "id": "147.3_IBIENESNAL_DICI_T_19",
+          "name": "IPC Bienes - Nacional",
+          "description": "IPC. Bienes. Nacional. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.7/download/indice-precios-al-consumidor-bienes-servicios-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Nacional",
+            "category": "Bienes",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        },
+        {
+          "id": "147.3_ISERVICNAL_DICI_T_22",
+          "name": "IPC Servicios - Nacional",
+          "description": "IPC. Servicios. Nacional. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.7/download/indice-precios-al-consumidor-bienes-servicios-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Nacional",
+            "category": "Servicios",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        },
+        {
+          "id": "148.3_INUCLEONAL_DICI_M_19",
+          "name": "IPC Núcleo - Nacional",
+          "description": "IPC. Núcleo. Nacional. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.9/download/indice-precios-al-consumidor-apertura-por-categorias-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Nacional",
+            "category": "Núcleo",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        },
+        {
+          "id": "148.3_IREGULANAL_DICI_M_22",
+          "name": "IPC Regulados - Nacional",
+          "description": "IPC. Regulados Nacional. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.9/download/indice-precios-al-consumidor-apertura-por-categorias-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Nacional",
+            "category": "Regulados",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        },
+        {
+          "id": "148.3_IESTACINAL_DICI_M_25",
+          "name": "IPC Estacionales - Nacional",
+          "description": "IPC. Estacionales. Nacional. Base dic 2016. Mensual.",
+          "frequency": "monthly",
+          "units": "Índice",
+          "start_date": "2016-12-01",
+          "end_date": "2026-10-01",
+          "dataset": "Índice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.9/download/indice-precios-al-consumidor-apertura-por-categorias-base-diciembre-2016-mensual.csv",
+          "dimensions": {
+            "region": "Nacional",
+            "category": "Estacionales",
+            "measure": "Índice",
+            "base": "Diciembre 2016=100"
+          },
+          "active": true
+        }
+      ]
+    },
+    "emae": {
+      "description": "Estimador Mensual de Actividad Económica (EMAE), base 2004. Nivel general (original, desestacionalizado, tendencia-ciclo y variaciones) y apertura sectorial (16 sectores). Frecuencia mensual. Fuente: INDEC / SSPM.",
+      "series": [
+        {
+          "id": "143.3_NO_PR_2004_A_21",
+          "name": "EMAE Nivel General - serie original",
+          "description": "EMAE. Base 2004",
+          "frequency": "monthly",
+          "units": "Índice 2004=100",
+          "start_date": "2004-01-01",
+          "end_date": "2026-08-01",
+          "dataset": "Estimador Mensual de Actividad Económica (EMAE). Base 2004",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/143/distribution/143.3/download/emae-valores-anuales-indice-base-2004-mensual.csv",
+          "dimensions": {
+            "sector": "Nivel general",
+            "measure": "Serie original",
+            "base": "2004=100"
+          },
+          "active": true
+        },
+        {
+          "id": "143.3_NO_PR_2004_A_31",
+          "name": "EMAE Nivel General - desestacionalizado",
+          "description": "EMAE desestacionalizado. Base 2004",
+          "frequency": "monthly",
+          "units": "Índice 2004=100",
+          "start_date": "2004-01-01",
+          "end_date": "2026-08-01",
+          "dataset": "Estimador Mensual de Actividad Económica (EMAE). Base 2004",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/143/distribution/143.3/download/emae-valores-anuales-indice-base-2004-mensual.csv",
+          "dimensions": {
+            "sector": "Nivel general",
+            "measure": "Desestacionalizado",
+            "base": "2004=100"
+          },
+          "active": true
+        },
+        {
+          "id": "143.3_NO_PR_2004_A_28",
+          "name": "EMAE Nivel General - tendencia-ciclo",
+          "description": "EMAE tendencia cliclo. Base 2004",
+          "frequency": "monthly",
+          "units": "Índice 2004=100",
+          "start_date": "2004-01-01",
+          "end_date": "2026-08-01",
+          "dataset": "Estimador Mensual de Actividad Económica (EMAE). Base 2004",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/143/distribution/143.3/download/emae-valores-anuales-indice-base-2004-mensual.csv",
+          "dimensions": {
+            "sector": "Nivel general",
+            "measure": "Tendencia-ciclo",
+            "base": "2004=100"
+          },
+          "active": true
+        },
+        {
+          "id": "143.3_ICE_SERVIA_2004_A_25",
+          "name": "EMAE Nivel General - variación interanual",
+          "description": "EMAE. Base 2004. Variación % interanual",
+          "frequency": "monthly",
+          "units": "Variación interanual (0-1)",
+          "start_date": "2005-01-01",
+          "end_date": "2026-08-01",
+          "dataset": "Estimador Mensual de Actividad Económica (EMAE). Base 2004",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/143/distribution/143.3/download/emae-valores-anuales-indice-base-2004-mensual.csv",
+          "dimensions": {
+            "sector": "Nivel general",
+            "measure": "Variación interanual"
+          },
+          "active": true
+        },
+        {
+          "id": "143.3_ICE_SER_VM_2004_A_34",
+          "name": "EMAE Nivel General - variación mensual desestacionalizada",
+          "description": "EMAE desestacionalizado. Base 2004. Variación % mensual",
+          "frequency": "monthly",
+          "units": "Variación mensual (0-1)",
+          "start_date": "2004-12-01",
+          "end_date": "2026-08-01",
+          "dataset": "Estimador Mensual de Actividad Económica (EMAE). Base 2004",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/143/distribution/143.3/download/emae-valores-anuales-indice-base-2004-mensual.csv",
+          "dimensions": {
+            "sector": "Nivel general",
+            "measure": "Variación mensual desestacionalizada"
+          },
+          "active": true
+        },
+        {
+          "id": "143.3_ICE_SER_VM_2004_A_31",
+          "name": "EMAE Nivel General - variación mensual tendencia-ciclo",
+          "description": "EMAE tendencia cliclo. Base 2004. Variación % mensual",
+          "frequency": "monthly",
+          "units": "Variación mensual (0-1)",
+          "start_date": "2004-12-01",
+          "end_date": "2026-08-01",
+          "dataset": "Estimador Mensual de Actividad Económica (EMAE). Base 2004",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/143/distribution/143.3/download/emae-valores-anuales-indice-base-2004-mensual.csv",
+          "dimensions": {
+            "sector": "Nivel general",
+            "measure": "Variación mensual tendencia-ciclo"
+          },
+          "active": true
+        },
+        {
+          "id": "11.3_ISOM_2004_M_39",
+          "name": "EMAE Agricultura, ganadería, caza y silvicultura",
+          "description": "EMAE. Agricultura, ganadería, caza y silvicultura",
+          "frequency": "monthly",
+          "units": "Índice 2004=100",
+          "start_date": "2004-01-01",
+          "end_date": "2026-08-01",
+          "dataset": "Estimador Mensual de Actividad Económica (EMAE). Apertura Sectorial. Base 2004",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/11/distribution/11.3/download/emae-apertura-por-sectores-valores-mensuales-indice-base-2004.csv",
+          "dimensions": {
+            "sector": "Agricultura, ganadería, caza y silvicultura",
+            "measure": "Índice",
+            "base": "2004=100"
+          },
+          "active": true
+        },
+        {
+          "id": "11.3_VIPAA_2004_M_5",
+          "name": "EMAE Pesca",
+          "description": "EMAE. Pesca",
+          "frequency": "monthly",
+          "units": "Índice 2004=100",
+          "start_date": "2004-01-01",
+          "end_date": "2026-08-01",
+          "dataset": "Estimador Mensual de Actividad Económica (EMAE). Apertura Sectorial. Base 2004",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/11/distribution/11.3/download/emae-apertura-por-sectores-valores-mensuales-indice-base-2004.csv",
+          "dimensions": {
+            "sector": "Pesca",
+            "measure": "Índice",
+            "base": "2004=100"
+          },
+          "active": true
+        },
+        {
+          "id": "11.3_ISD_2004_M_26",
+          "name": "EMAE Explotación de minas y canteras",
+          "description": "EMAE. Explotación de minas y canteras",
+          "frequency": "monthly",
+          "units": "Índice 2004=100",
+          "start_date": "2004-01-01",
+          "end_date": "2026-08-01",
+          "dataset": "Estimador Mensual de Actividad Económica (EMAE). Apertura Sectorial. Base 2004",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/11/distribution/11.3/download/emae-apertura-por-sectores-valores-mensuales-indice-base-2004.csv",
+          "dimensions": {
+            "sector": "Explotación de minas y canteras",
+            "measure": "Índice",
+            "base": "2004=100"
+          },
+          "active": true
+        },
+        {
+          "id": "11.3_VMASD_2004_M_23",
+          "name": "EMAE Industria manufacturera",
+          "description": "EMAE. Industria Manufacturera",
+          "frequency": "monthly",
+          "units": "Índice 2004=100",
+          "start_date": "2004-01-01",
+          "end_date": "2026-08-01",
+          "dataset": "Estimador Mensual de Actividad Económica (EMAE). Apertura Sectorial. Base 2004",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/11/distribution/11.3/download/emae-apertura-por-sectores-valores-mensuales-indice-base-2004.csv",
+          "dimensions": {
+            "sector": "Industria manufacturera",
+            "measure": "Índice",
+            "base": "2004=100"
+          },
+          "active": true
+        },
+        {
+          "id": "11.3_ITC_2004_M_21",
+          "name": "EMAE Electricidad, gas y agua",
+          "description": "EMAE. Electricidad, gas y agua",
+          "frequency": "monthly",
+          "units": "Índice 2004=100",
+          "start_date": "2004-01-01",
+          "end_date": "2026-08-01",
+          "dataset": "Estimador Mensual de Actividad Económica (EMAE). Apertura Sectorial. Base 2004",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/11/distribution/11.3/download/emae-apertura-por-sectores-valores-mensuales-indice-base-2004.csv",
+          "dimensions": {
+            "sector": "Electricidad, gas y agua",
+            "measure": "Índice",
+            "base": "2004=100"
+          },
+          "active": true
+        },
+        {
+          "id": "11.3_VMATC_2004_M_12",
+          "name": "EMAE Construcción",
+          "description": "EMAE. Construcción",
+          "frequency": "monthly",
+          "units": "Índice 2004=100",
+          "start_date": "2004-01-01",
+          "end_date": "2026-08-01",
+          "dataset": "Estimador Mensual de Actividad Económica (EMAE). Apertura Sectorial. Base 2004",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/11/distribution/11.3/download/emae-apertura-por-sectores-valores-mensuales-indice-base-2004.csv",
+          "dimensions": {
+            "sector": "Construcción",
+            "measure": "Índice",
+            "base": "2004=100"
+          },
+          "active": true
+        },
+        {
+          "id": "11.3_AGCS_2004_M_41",
+          "name": "EMAE Comercio mayorista y minorista y reparaciones",
+          "description": "EMAE. Comercio mayorista y minorista y reparaciones",
+          "frequency": "monthly",
+          "units": "Índice 2004=100",
+          "start_date": "2004-01-01",
+          "end_date": "2026-08-01",
+          "dataset": "Estimador Mensual de Actividad Económica (EMAE). Apertura Sectorial. Base 2004",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/11/distribution/11.3/download/emae-apertura-por-sectores-valores-mensuales-indice-base-2004.csv",
+          "dimensions": {
+            "sector": "Comercio mayorista y minorista y reparaciones",
+            "measure": "Índice",
+            "base": "2004=100"
+          },
+          "active": true
+        },
+        {
+          "id": "11.3_P_2004_M_20",
+          "name": "EMAE Hoteles y restaurantes",
+          "description": "EMAE. Hoteles y restaurantes",
+          "frequency": "monthly",
+          "units": "Índice 2004=100",
+          "start_date": "2004-01-01",
+          "end_date": "2026-08-01",
+          "dataset": "Estimador Mensual de Actividad Económica (EMAE). Apertura Sectorial. Base 2004",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/11/distribution/11.3/download/emae-apertura-por-sectores-valores-mensuales-indice-base-2004.csv",
+          "dimensions": {
+            "sector": "Hoteles y restaurantes",
+            "measure": "Índice",
+            "base": "2004=100"
+          },
+          "active": true
+        },
+        {
+          "id": "11.3_EMC_2004_M_25",
+          "name": "EMAE Transporte, almacenamiento y comunicaciones",
+          "description": "EMAE. Transporte, almacenamiento y comunicaciones",
+          "frequency": "monthly",
+          "units": "Índice 2004=100",
+          "start_date": "2004-01-01",
+          "end_date": "2026-08-01",
+          "dataset": "Estimador Mensual de Actividad Económica (EMAE). Apertura Sectorial. Base 2004",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/11/distribution/11.3/download/emae-apertura-por-sectores-valores-mensuales-indice-base-2004.csv",
+          "dimensions": {
+            "sector": "Transporte, almacenamiento y comunicaciones",
+            "measure": "Índice",
+            "base": "2004=100"
+          },
+          "active": true
+        },
+        {
+          "id": "11.3_IM_2004_M_25",
+          "name": "EMAE Intermediación financiera",
+          "description": "EMAE. Intermediación financiera",
+          "frequency": "monthly",
+          "units": "Índice 2004=100",
+          "start_date": "2004-01-01",
+          "end_date": "2026-08-01",
+          "dataset": "Estimador Mensual de Actividad Económica (EMAE). Apertura Sectorial. Base 2004",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/11/distribution/11.3/download/emae-apertura-por-sectores-valores-mensuales-indice-base-2004.csv",
+          "dimensions": {
+            "sector": "Intermediación financiera",
+            "measure": "Índice",
+            "base": "2004=100"
+          },
+          "active": true
+        },
+        {
+          "id": "11.3_SEGA_2004_M_48",
+          "name": "EMAE Actividades inmobiliarias, empresariales y alquiler",
+          "description": "EMAE. Inmobiliarias, empresariales y alquiler",
+          "frequency": "monthly",
+          "units": "Índice 2004=100",
+          "start_date": "2004-01-01",
+          "end_date": "2026-08-01",
+          "dataset": "Estimador Mensual de Actividad Económica (EMAE). Apertura Sectorial. Base 2004",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/11/distribution/11.3/download/emae-apertura-por-sectores-valores-mensuales-indice-base-2004.csv",
+          "dimensions": {
+            "sector": "Actividades inmobiliarias, empresariales y alquiler",
+            "measure": "Índice",
+            "base": "2004=100"
+          },
+          "active": true
+        },
+        {
+          "id": "11.3_C_2004_M_60",
+          "name": "EMAE Administración pública, defensa y seguridad social",
+          "description": "EMAE. Administración pública, defensa y seguridad social",
+          "frequency": "monthly",
+          "units": "Índice 2004=100",
+          "start_date": "2004-01-01",
+          "end_date": "2026-08-01",
+          "dataset": "Estimador Mensual de Actividad Económica (EMAE). Apertura Sectorial. Base 2004",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/11/distribution/11.3/download/emae-apertura-por-sectores-valores-mensuales-indice-base-2004.csv",
+          "dimensions": {
+            "sector": "Administración pública, defensa y seguridad social",
+            "measure": "Índice",
+            "base": "2004=100"
+          },
+          "active": true
+        },
+        {
+          "id": "11.3_CMMR_2004_M_10",
+          "name": "EMAE Enseñanza",
+          "description": "EMAE. Enseñanza",
+          "frequency": "monthly",
+          "units": "Índice 2004=100",
+          "start_date": "2004-01-01",
+          "end_date": "2026-08-01",
+          "dataset": "Estimador Mensual de Actividad Económica (EMAE). Apertura Sectorial. Base 2004",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/11/distribution/11.3/download/emae-apertura-por-sectores-valores-mensuales-indice-base-2004.csv",
+          "dimensions": {
+            "sector": "Enseñanza",
+            "measure": "Índice",
+            "base": "2004=100"
+          },
+          "active": true
+        },
+        {
+          "id": "11.3_HR_2004_M_24",
+          "name": "EMAE Servicios sociales y salud",
+          "description": "EMAE. Servicios sociales (salud)",
+          "frequency": "monthly",
+          "units": "Índice 2004=100",
+          "start_date": "2004-01-01",
+          "end_date": "2026-08-01",
+          "dataset": "Estimador Mensual de Actividad Económica (EMAE). Apertura Sectorial. Base 2004",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/11/distribution/11.3/download/emae-apertura-por-sectores-valores-mensuales-indice-base-2004.csv",
+          "dimensions": {
+            "sector": "Servicios sociales y salud",
+            "measure": "Índice",
+            "base": "2004=100"
+          },
+          "active": true
+        },
+        {
+          "id": "11.3_TAC_2004_M_60",
+          "name": "EMAE Otras actividades de servicios comunitarios, sociales y personales",
+          "description": "EMAE. Servicios comunitarios",
+          "frequency": "monthly",
+          "units": "Índice 2004=100",
+          "start_date": "2004-01-01",
+          "end_date": "2026-08-01",
+          "dataset": "Estimador Mensual de Actividad Económica (EMAE). Apertura Sectorial. Base 2004",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/11/distribution/11.3/download/emae-apertura-por-sectores-valores-mensuales-indice-base-2004.csv",
+          "dimensions": {
+            "sector": "Otras actividades de servicios comunitarios, sociales y personales",
+            "measure": "Índice",
+            "base": "2004=100"
+          },
+          "active": true
+        },
+        {
+          "id": "11.3_IF_2004_M_25",
+          "name": "EMAE Impuestos netos de subsidios",
+          "description": "EMAE. Subsidios netos",
+          "frequency": "monthly",
+          "units": "Índice 2004=100",
+          "start_date": "2004-01-01",
+          "end_date": "2026-08-01",
+          "dataset": "Estimador Mensual de Actividad Económica (EMAE). Apertura Sectorial. Base 2004",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/11/distribution/11.3/download/emae-apertura-por-sectores-valores-mensuales-indice-base-2004.csv",
+          "dimensions": {
+            "sector": "Impuestos netos de subsidios",
+            "measure": "Índice",
+            "base": "2004=100"
+          },
+          "active": true
+        }
+      ]
+    },
+    "mercado_trabajo": {
+      "description": "Encuesta Permanente de Hogares (EPH) continua. Tasas de actividad, empleo, desempleo y subocupación por aglomerado urbano y total de 31 aglomerados. Frecuencia trimestral. Fuente: INDEC / SSPM.",
+      "series": [
+        {
+          "id": "43.2_ECTAT_0_T_33",
+          "name": "EPH Tasa de actividad - Total 31 aglomerados urbanos",
+          "description": "Tasa de actividad total. En porcentaje.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-01-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Actividad",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/43/distribution/43.2/download/tasa-actividad-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Total 31 aglomerados urbanos",
+            "measure": "Actividad",
+            "geography_type": "Total"
+          },
+          "active": true
+        },
+        {
+          "id": "44.2_ECTET_0_T_30",
+          "name": "EPH Tasa de empleo - Total 31 aglomerados urbanos",
+          "description": "Tasa de empleo total. En porcentaje.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-01-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Empleo",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/44/distribution/44.2/download/tasa-empleo-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Total 31 aglomerados urbanos",
+            "measure": "Empleo",
+            "geography_type": "Total"
+          },
+          "active": true
+        },
+        {
+          "id": "45.2_ECTDT_0_T_33",
+          "name": "EPH Tasa de desempleo - Total 31 aglomerados urbanos",
+          "description": "Tasa de desempleo total. En porcentaje.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-01-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Desempleo",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/45/distribution/45.2/download/tasa-desempleo-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Total 31 aglomerados urbanos",
+            "measure": "Desempleo",
+            "geography_type": "Total"
+          },
+          "active": true
+        },
+        {
+          "id": "46.2_ECTST_0_T_36",
+          "name": "EPH Tasa de subocupación - Total 31 aglomerados urbanos",
+          "description": "Tasa de subocupación total.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-01-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Subocupación",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/46/distribution/46.2/download/tasa-subocupacion-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Total 31 aglomerados urbanos",
+            "measure": "Subocupación",
+            "geography_type": "Total"
+          },
+          "active": true
+        },
+        {
+          "id": "43.2_ECTATC_0_T_38",
+          "name": "EPH Tasa de actividad - CABA",
+          "description": "Tasa de actividad total CABA. En porcentaje.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-01-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Actividad",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/43/distribution/43.2/download/tasa-actividad-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "CABA",
+            "measure": "Actividad",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        },
+        {
+          "id": "44.2_ECTETC_0_T_35",
+          "name": "EPH Tasa de empleo - CABA",
+          "description": "Tasa de empleo total CABA. En porcentaje.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-01-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Empleo",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/44/distribution/44.2/download/tasa-empleo-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "CABA",
+            "measure": "Empleo",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        },
+        {
+          "id": "45.2_ECTDTC_0_T_38",
+          "name": "EPH Tasa de desempleo - CABA",
+          "description": "Tasa de desempleo total CABA. En porcentaje.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-01-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Desempleo",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/45/distribution/45.2/download/tasa-desempleo-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "CABA",
+            "measure": "Desempleo",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        },
+        {
+          "id": "46.2_ECTSTC_0_T_41",
+          "name": "EPH Tasa de subocupación - CABA",
+          "description": "Tasa de subocupación total CABA.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-01-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Subocupación",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/46/distribution/46.2/download/tasa-subocupacion-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "CABA",
+            "measure": "Subocupación",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        },
+        {
+          "id": "43.2_ECTATPG_0_T_46",
+          "name": "EPH Tasa de actividad - Partidos de GBA",
+          "description": "Tasa de actividad total partidos GBA. En porcentaje.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-01-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Actividad",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/43/distribution/43.2/download/tasa-actividad-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Partidos de GBA",
+            "measure": "Actividad",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        },
+        {
+          "id": "44.2_ECTETPG_0_T_43",
+          "name": "EPH Tasa de empleo - Partidos de GBA",
+          "description": "Tasa de empleo total partidos GBA. En porcentaje.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-01-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Empleo",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/44/distribution/44.2/download/tasa-empleo-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Partidos de GBA",
+            "measure": "Empleo",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        },
+        {
+          "id": "45.2_ECTDTPG_0_T_46",
+          "name": "EPH Tasa de desempleo - Partidos de GBA",
+          "description": "Tasa de desempleo total partidos GBA. En porcentaje.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-01-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Desempleo",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/45/distribution/45.2/download/tasa-desempleo-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Partidos de GBA",
+            "measure": "Desempleo",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        },
+        {
+          "id": "46.2_ECTSTPG_0_T_49",
+          "name": "EPH Tasa de subocupación - Partidos de GBA",
+          "description": "Tasa de subocupación total partidos GBA.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-01-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Subocupación",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/46/distribution/46.2/download/tasa-subocupacion-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Partidos de GBA",
+            "measure": "Subocupación",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        },
+        {
+          "id": "43.2_ECTATGM_0_T_46",
+          "name": "EPH Tasa de actividad - Gran Mendoza",
+          "description": "Tasa de actividad total Gran Mendoza. En porcentaje.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-01-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Actividad",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/43/distribution/43.2/download/tasa-actividad-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Gran Mendoza",
+            "measure": "Actividad",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        },
+        {
+          "id": "44.2_ECTETGM_0_T_43",
+          "name": "EPH Tasa de empleo - Gran Mendoza",
+          "description": "Tasa de empleo total Gran Mendoza. En porcentaje.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-01-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Empleo",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/44/distribution/44.2/download/tasa-empleo-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Gran Mendoza",
+            "measure": "Empleo",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        },
+        {
+          "id": "45.2_ECTDTGM_0_T_46",
+          "name": "EPH Tasa de desempleo - Gran Mendoza",
+          "description": "Tasa de desempleo total Gran Mendoza. En porcentaje.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-01-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Desempleo",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/45/distribution/45.2/download/tasa-desempleo-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Gran Mendoza",
+            "measure": "Desempleo",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        },
+        {
+          "id": "46.2_ECTSTGM_0_T_49",
+          "name": "EPH Tasa de subocupación - Gran Mendoza",
+          "description": "Tasa de subocupación total Gran Mendoza.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-01-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Subocupación",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/46/distribution/46.2/download/tasa-subocupacion-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Gran Mendoza",
+            "measure": "Subocupación",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        },
+        {
+          "id": "43.2_ECTATGP_0_T_45",
+          "name": "EPH Tasa de actividad - Gran Paraná",
+          "description": "Tasa de actividad total Gran Paraná. En porcentaje.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-07-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Actividad",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/43/distribution/43.2/download/tasa-actividad-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Gran Paraná",
+            "measure": "Actividad",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        },
+        {
+          "id": "44.2_ECTETGP_0_T_42",
+          "name": "EPH Tasa de empleo - Gran Paraná",
+          "description": "Tasa de empleo total Gran Paraná. En porcentaje.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-07-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Empleo",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/44/distribution/44.2/download/tasa-empleo-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Gran Paraná",
+            "measure": "Empleo",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        },
+        {
+          "id": "45.2_ECTDTGP_0_T_45",
+          "name": "EPH Tasa de desempleo - Gran Paraná",
+          "description": "Tasa de desempleo total Gran Paraná. En porcentaje.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-07-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Desempleo",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/45/distribution/45.2/download/tasa-desempleo-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Gran Paraná",
+            "measure": "Desempleo",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        },
+        {
+          "id": "46.2_ECTSTGP_0_T_48",
+          "name": "EPH Tasa de subocupación - Gran Paraná",
+          "description": "Tasa de subocupación total Gran Paraná.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-07-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Subocupación",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/46/distribution/46.2/download/tasa-subocupacion-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Gran Paraná",
+            "measure": "Subocupación",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        },
+        {
+          "id": "43.2_ECTATGR_0_T_50",
+          "name": "EPH Tasa de actividad - Gran Resistencia",
+          "description": "Tasa de actividad total Gran Resistencia. En porcentaje.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-07-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Actividad",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/43/distribution/43.2/download/tasa-actividad-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Gran Resistencia",
+            "measure": "Actividad",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        },
+        {
+          "id": "44.2_ECTETGR_0_T_47",
+          "name": "EPH Tasa de empleo - Gran Resistencia",
+          "description": "Tasa de empleo total Gran Resistencia. En porcentaje.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-07-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Empleo",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/44/distribution/44.2/download/tasa-empleo-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Gran Resistencia",
+            "measure": "Empleo",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        },
+        {
+          "id": "45.2_ECTDTGR_0_T_50",
+          "name": "EPH Tasa de desempleo - Gran Resistencia",
+          "description": "Tasa de desempleo total Gran Resistencia. En porcentaje.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-07-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Desempleo",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/45/distribution/45.2/download/tasa-desempleo-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Gran Resistencia",
+            "measure": "Desempleo",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        },
+        {
+          "id": "46.2_ECTSTGR_0_T_53",
+          "name": "EPH Tasa de subocupación - Gran Resistencia",
+          "description": "Tasa de subocupación total Gran Resistencia.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-07-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Subocupación",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/46/distribution/46.2/download/tasa-subocupacion-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Gran Resistencia",
+            "measure": "Subocupación",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        },
+        {
+          "id": "43.2_ECTATGSJ_0_T_47",
+          "name": "EPH Tasa de actividad - Gran San Juan",
+          "description": "Tasa de actividad total Gran San Juan. En porcentaje.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-07-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Actividad",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/43/distribution/43.2/download/tasa-actividad-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Gran San Juan",
+            "measure": "Actividad",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        },
+        {
+          "id": "44.2_ECTETGSJ_0_T_44",
+          "name": "EPH Tasa de empleo - Gran San Juan",
+          "description": "Tasa de empleo total Gran San Juan. En porcentaje.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-07-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Empleo",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/44/distribution/44.2/download/tasa-empleo-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Gran San Juan",
+            "measure": "Empleo",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        },
+        {
+          "id": "45.2_ECTDTGSJ_0_T_47",
+          "name": "EPH Tasa de desempleo - Gran San Juan",
+          "description": "Tasa de desempleo total Gran San Juan. En porcentaje.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-07-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Desempleo",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/45/distribution/45.2/download/tasa-desempleo-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Gran San Juan",
+            "measure": "Desempleo",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        },
+        {
+          "id": "46.2_ECTSTGSJ_0_T_50",
+          "name": "EPH Tasa de subocupación - Gran San Juan",
+          "description": "Tasa de subocupación total Gran San Juan.",
+          "frequency": "quarterly",
+          "units": "Proporción (0-1)",
+          "start_date": "2003-07-01",
+          "end_date": "2026-04-01",
+          "dataset": "Principales variables ocupacionales. EPH continua. Subocupación",
+          "download_url": "https://infra.datos.gob.ar/catalog/sspm/dataset/46/distribution/46.2/download/tasa-subocupacion-valores-trimestrales.csv",
+          "dimensions": {
+            "aglomerado": "Gran San Juan",
+            "measure": "Subocupación",
+            "geography_type": "Aglomerado"
+          },
+          "active": true
+        }
+      ]
+    }
+  }
+}

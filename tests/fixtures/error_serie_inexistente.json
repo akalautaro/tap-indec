@@ -1,0 +1,10 @@
+{
+    "errors": [
+        {
+            "error": "Serie inexistente: NO_EXISTE"
+        }
+    ],
+    "failed_series": [
+        "NO_EXISTE"
+    ]
+}
