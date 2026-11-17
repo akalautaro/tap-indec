@@ -1,0 +1,70 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    name: Calidad (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          enable-cache: true
+
+      - name: Instalar dependencias
+        run: uv sync --extra dev
+
+      - name: Ruff
+        run: uv run ruff check .
+
+      - name: Formato
+        run: uv run ruff format --check .
+
+      - name: Documentación de streams
+        run: |
+          uv run python scripts/render_docs.py
+          git diff --exit-code docs/streams
+
+      - name: Mypy
+        run: uv run mypy tap_indec
+
+      - name: Tests
+        run: uv run pytest --cov=tap_indec --cov-report=term-missing --cov-fail-under=85
+
+  integration:
+    name: Catálogo contra la API real
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+          enable-cache: true
+
+      - name: Instalar dependencias
+        run: uv sync --extra dev
+
+      - name: Verificar series del catálogo
+        run: uv run pytest -m integration -v

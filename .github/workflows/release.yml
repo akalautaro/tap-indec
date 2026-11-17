@@ -1,0 +1,39 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Publicar ${{ github.ref_name }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+          enable-cache: true
+
+      - name: Verificar que el tag coincida con la versión
+        run: |
+          version=$(uv run python -c "import tap_indec; print(tap_indec.__version__)")
+          if [ "v${version}" != "${GITHUB_REF_NAME}" ]; then
+            echo "El tag ${GITHUB_REF_NAME} no coincide con la versión v${version}."
+            exit 1
+          fi
+
+      - name: Construir sdist y wheel
+        run: uv build
+
+      - name: Crear GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "${GITHUB_REF_NAME}" dist/* \
+            --title "${GITHUB_REF_NAME}" \
+            --generate-notes

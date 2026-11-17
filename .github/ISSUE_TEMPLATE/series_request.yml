@@ -1,0 +1,35 @@
+name: Serie nueva
+description: Proponer una serie para el catálogo
+title: "[serie] "
+labels: ["catalog"]
+body:
+  - type: input
+    id: series_id
+    attributes:
+      label: ID de la serie
+      description: El `field.id` de la API de datos.gob.ar
+      placeholder: 145.3_INGNACNAL_DICI_M_15
+    validations:
+      required: true
+  - type: input
+    id: stream
+    attributes:
+      label: Stream
+      placeholder: ipc, emae o mercado_trabajo
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verificación
+      description: Pegá la salida de `curl` con `limit=2`.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: dimensions
+    attributes:
+      label: Dimensiones
+      description: Región, categoría, sector, aglomerado o medida que corresponde.
+    validations:
+      required: true
