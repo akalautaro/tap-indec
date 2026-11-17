@@ -1,0 +1,44 @@
+{
+    "data": [],
+    "count": 0,
+    "meta": [
+        {
+            "frequency": "month"
+        },
+        {
+            "catalog": {
+                "title": "Datos Programaci\u00f3n Macroecon\u00f3mica"
+            },
+            "dataset": {
+                "title": "\u00cdndice de Precios al Consumidor Nacional (IPC). Base diciembre 2016.",
+                "description": "\u00cdndice de Precios al Consumidor Nacional. Base diciembre 2016.",
+                "issued": "2017-09-28",
+                "source": "Instituto Nacional de Estad\u00edstica y Censos (INDEC)"
+            },
+            "distribution": {
+                "title": "\u00cdndice de Precios al Consumidor. Nivel General. Base diciembre 2016. Valores mensuales",
+                "downloadURL": "https://infra.datos.gob.ar/catalog/sspm/dataset/145/distribution/145.3/download/indice-precios-al-consumidor-nivel-general-base-diciembre-2016-mensual.csv"
+            },
+            "field": {
+                "description": "IPC. Nivel General Nacional. Base dic 2016. Mensual.",
+                "id": "145.3_INGNACNAL_DICI_M_15",
+                "units": "\u00cdndice",
+                "representation_mode": "value",
+                "representation_mode_units": "\u00cdndice"
+            }
+        }
+    ],
+    "params": {
+        "ids": "145.3_INGNACNAL_DICI_M_15",
+        "start_date": "2030-01-01",
+        "limit": "1000",
+        "format": "json",
+        "identifiers": [
+            {
+                "id": "145.3_INGNACNAL_DICI_M_15",
+                "distribution": "145.3",
+                "dataset": "145"
+            }
+        ]
+    }
+}
